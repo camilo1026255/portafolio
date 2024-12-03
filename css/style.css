@@ -2,7 +2,7 @@
 /* General */
 body {
     background-color: #121212; /* Fondo oscuro */
-    color: #f8f9fa; /* Texto blanco */
+    color: #f8f9fa; 
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
@@ -296,7 +296,7 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100vh; /* Ocupa toda la pantalla */
+    height: 100vh; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -377,7 +377,7 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100vh; /* Ocupa toda la pantalla */
+    height: 100vh; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -387,10 +387,10 @@ body {
 /* Título */
 
 #experience-title {
-    color: #00bfff; /* Azul vibrante */
+    color: #00bfff; 
     font-weight: bold;
-    text-transform: uppercase; /* Mayúsculas */
-    text-align: left; /* Alineación a la izquierda */
+    text-transform: uppercase; 
+    text-align: left; 
     font-size: 32px;
 }
 
@@ -424,16 +424,16 @@ body {
 
 /* Lista de responsabilidades */
 #experience-responsibilities-list {
-    padding-left: 20px; /* Sangría para la lista */
+    padding-left: 20px; 
     margin-top: 10px;
     text-align: left;
     padding-left: 200px;
 }
 
 #experience-responsibilities-list li {
-    list-style-type: disc; /* Viñetas circulares */
-    color: #ffffff; /* Texto blanco */
-    margin-bottom: 10px; /* Espaciado entre ítems */
+    list-style-type: disc; 
+    color: #ffffff; 
+    margin-bottom: 10px; 
     text-align: left;
     
 }
@@ -442,8 +442,8 @@ body {
 /* hobbies */
 /* Sección general */
 #hobbies-section {
-    background: linear-gradient(180deg, #001f3f, #003366); /* Fondo gradiente azul oscuro */
-    min-height: 100vh; /* Ocupa toda la pantalla */
+    background: linear-gradient(180deg, #001f3f, #003366); 
+    min-height: 100vh; 
 }
   
   /* Imagen */
@@ -461,21 +461,21 @@ body {
   
   /* Descripción */
 #hobbies-description p {
-    line-height: 1.8; /* Espaciado entre líneas */
-    margin-bottom: 15px; /* Espaciado entre párrafos */
+    line-height: 1.8; 
+    margin-bottom: 15px; 
 }
   
 
 /* Estilo para el encabezado de proyectos */
 #trabajo-relizado {
-    font-size: 1.5rem; /* Tamaño del texto */
-    font-weight: bold; /* Negrita */
-    color:rgb(13 110 253) !important; /* Color del texto */
-    margin-bottom: 20px; /* Espaciado inferior */
-    text-transform: uppercase; /* Mayúsculas */
-    letter-spacing: 2px; /* Espaciado entre letras */
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Sombra de texto */
-    animation: fadeInDown 1s ease-in-out; /* Animación de entrada */
+    font-size: 1.5rem; 
+    font-weight: bold; 
+    color:rgb(13 110 253) !important; 
+    margin-bottom: 20px; 
+    text-transform: uppercase; 
+    letter-spacing: 2px; 
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); 
+    animation: fadeInDown 1s ease-in-out; 
 }
 
 
@@ -488,24 +488,24 @@ body {
     font-weight: 600;
     text-align: center;
     text-decoration: none;
-    color: #ffffff; /* Color del texto */
-    background-color: #007bff; /* Color de fondo */
+    color: #ffffff; 
+    background-color: #007bff; 
     border: 2px solid transparent;
-    border-radius: 10px; /* Bordes redondeados */
+    border-radius: 10px; 
     transition: all 0.3s ease-in-out;
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 /* Hover: Efecto al pasar el mouse */
 #trabajo-rel:hover {
-    background-color: #0056b3; /* Fondo más oscuro */
-    color: #ffffff; /* Color del texto */
-    transform: translateY(-5px); /* Efecto de elevación */
+    background-color: #0056b3; 
+    color: #ffffff; 
+    transform: translateY(-5px); 
     box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
 }
 
 #cuadrado {
-    /* margin-top: 1px; */
+   
     background-color: transparent;
     position: absolute;
     left: -124px;
@@ -521,3 +521,50 @@ body {
         padding: 10px 20px;
     }
 }
+
+
+
+/* dia o noche */
+
+body.light-mode #inicio   {
+    color: #000000;
+    
+}
+
+body.dark-mode #inicio {
+    background-color: #ff0000;
+    background: url('../img/bogota.jpg') no-repeat center center/cover;
+
+}
+body.dark-mode #inicio p {
+    color: #000000;
+    font-weight: bold;
+
+}
+
+body.dark-mode #inicio h1 {
+    color: #000000;
+    font-weight: bold;
+
+}
+
+
+
+/* Ajuste de colores para la barra de navegación */
+.navbar.dark-mode {
+    background-color: #ff0000;
+}
+.navbar.light-mode {
+    background-color: #f8f9fa;
+}
+#inicio {
+    min-height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url('../img/background.jpg') no-repeat center center/cover;
+}
+
+
